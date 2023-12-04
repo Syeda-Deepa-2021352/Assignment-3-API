@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meal DB API Search</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      #search-container {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      #search-box {
+        padding: 8px;
+        width: 200px;
+      }
+
+      #search-btn {
+        padding: 8px;
+        cursor: pointer;
+      }
+
+      #results-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+
+      .meal-card {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin: 10px;
+        padding: 10px;
+        width: 200px;
+        text-align: center;
+      }
+
+      .meal-img {
+        max-width: 100%;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Meal DB API Search</h1>
+
+    <div id="search-container">
+      <input type="text" id="search-box" placeholder="Enter ingredient..." />
+      <button id="search-btn">Search</button>
+    </div>
+
+    <div id="results-container"></div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
